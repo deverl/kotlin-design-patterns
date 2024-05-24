@@ -7,7 +7,7 @@ abstract class Shape : Cloneable {
 
     abstract fun draw()
 
-    public override fun clone() : Any {
+    public override fun clone(): Any {
         var clone: Any? = null
         try {
             clone = super.clone()
@@ -19,7 +19,7 @@ abstract class Shape : Cloneable {
 }
 
 
-class Rectangle: Shape() {
+class Rectangle : Shape() {
     init {
         type = "Rectangle"
     }
@@ -29,19 +29,21 @@ class Rectangle: Shape() {
     }
 }
 
-class Square: Shape() {
+class Square : Shape() {
     init {
         type = "Square"
     }
+
     override fun draw() {
         println("Inside Square::draw() method.")
     }
 }
 
-class Circle: Shape() {
+class Circle : Shape() {
     init {
         type = "Circle"
     }
+
     override fun draw() {
         println("Inside Circle::draw() method.")
     }
@@ -49,7 +51,7 @@ class Circle: Shape() {
 
 
 object ShapeCache {
-    private val shapeMap = hashMapOf<String? , Shape>()
+    private val shapeMap = hashMapOf<String?, Shape>()
 
     fun loadCache() {
         val circle = Circle()

@@ -1,4 +1,3 @@
-import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
 import kotlin.test.assertSame
 
@@ -6,14 +5,13 @@ object NetworkDriver {
     init {
         println("Initializing network driver: $this")
     }
+
     fun connect() {
         println("Connecting to network")
     }
 
-    fun log(): NetworkDriver = apply{ println("Logging network driver: $this") }
+    fun log(): NetworkDriver = apply { println("Logging network driver: $this") }
 }
-
-
 
 
 class SingletonTest {

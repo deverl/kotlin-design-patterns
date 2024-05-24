@@ -3,7 +3,7 @@ import kotlin.test.Test
 
 
 class AlertBox {
-    var message : String? = null
+    var message: String? = null
 
     fun show() {
         println("AlertBox: $this:  $message")
@@ -33,7 +33,6 @@ class Window2 {
         box.show()
     }
 }
-
 
 
 class WindowTest {

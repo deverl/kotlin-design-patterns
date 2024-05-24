@@ -3,18 +3,18 @@ import org.junit.jupiter.api.Test
 
 interface Device {
     var volume: Int
-    fun getName() : String
+    fun getName(): String
 }
 
 
 class Radio : Device {
     override var volume: Int = 0
-    override fun getName(): String  = "Radio"
+    override fun getName(): String = "Radio"
 }
 
 class TV : Device {
     override var volume: Int = 0
-    override fun getName(): String  = "TV"
+    override fun getName(): String = "TV"
 }
 
 interface Remote {

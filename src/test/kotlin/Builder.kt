@@ -1,7 +1,7 @@
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test
 
-class Component private constructor(builder : Builder) {
+class Component private constructor(builder: Builder) {
     var param1: String? = null
     var param2: Int? = null
     var param3: Boolean? = null

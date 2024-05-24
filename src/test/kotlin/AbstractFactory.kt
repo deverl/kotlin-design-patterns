@@ -32,7 +32,7 @@ class DatabaseFactory : DataSourceFactory() {
 class AbstractFactoryTest {
     @Test
     fun abstractFactoryTest() {
-        val dataSourceFactory : DataSourceFactory = DataSourceFactory.createFactory<DatabaseDataSource>()
+        val dataSourceFactory: DataSourceFactory = DataSourceFactory.createFactory<DatabaseDataSource>()
         val dataSource = dataSourceFactory.createDataSource()
         println("Created datasource $dataSource")
         assertThat(dataSource).isInstanceOf(DatabaseDataSource::class.java)

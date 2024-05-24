@@ -22,7 +22,6 @@ class NormalCoffeeMaker : CoffeeMaker {
 }
 
 
-
 // Decorator
 
 class EnhancedCoffeeMaker(private val coffeeMaker: CoffeeMaker) : CoffeeMaker by coffeeMaker {

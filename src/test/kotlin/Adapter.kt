@@ -25,12 +25,11 @@ class DatabaseGenerator {
     }
 }
 
-
 interface DataBaseAdapter {
     fun convertData(data: List<DatabaseData>): List<DisplayDataType>
 }
 
-class DataDisplayAdapter(val display:  DataDisplay) : DataBaseAdapter {
+class DataDisplayAdapter(val display: DataDisplay) : DataBaseAdapter {
     override fun convertData(data: List<DatabaseData>): List<DisplayDataType> {
         val displayData = arrayListOf<DisplayDataType>()
         data.forEach {

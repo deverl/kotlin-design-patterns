@@ -2,7 +2,7 @@ import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 
 sealed class Country {
-    object Canada: Country() {
+    object Canada : Country() {
         init {
             println("Initializing Canada")
         }
@@ -10,10 +10,9 @@ sealed class Country {
 }
 
 
-
-object Spain: Country()
-class Greece(val someProp: String): Country()
-data class USA(val someProp: String): Country()
+object Spain : Country()
+class Greece(val someProp: String) : Country()
+data class USA(val someProp: String) : Country()
 
 
 class Currency(val code: String)
