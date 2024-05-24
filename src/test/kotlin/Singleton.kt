@@ -1,3 +1,6 @@
+// Singleton pattern
+
+
 import org.junit.jupiter.api.Test
 import kotlin.test.assertSame
 
